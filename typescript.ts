@@ -48,3 +48,15 @@ interface teacher {
     subject: string[],
     age: number
 }
+
+let mido: teacher = {
+    name: "mido",
+    years: 20,
+    subject: ["javascript", "typescript"],
+    age: 37
+
+
+
+}
+
+console.log(mido)
