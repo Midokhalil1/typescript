@@ -1,15 +1,14 @@
 // console.log("Hello typescript")
 
 function debug(message: any): void {
-    console.log(message)
+    // console.log(message)
 }
 
 let firstName: string = "Mido";
 let age: number = 37;
 let good: boolean = true
 
-
-console.log(`
+debug(`
 First Name: ${firstName}
 Your Age:  ${age}
 you have many ${good}
@@ -23,9 +22,9 @@ enum taxForm {
     cCorp = "1120s"
 }
 
-console.log(`
-you need form ${taxForm.childcredit}
-`)
+// console.log(`
+// you need form ${taxForm.childcredit}
+// `)
 
 let fruits: string[] = [
     "banana",
@@ -39,6 +38,13 @@ function getFruit(index: number): string {
 }
 
 
-debug("OMG No return")
+// debug("OMG No return")
 
-console.log(` you choose an ${getFruit(0)}`)
+debug(` you choose an ${getFruit(0)}`)
+
+interface teacher {
+    name: string,
+    years: number,
+    subject: string[],
+    age: number
+}
